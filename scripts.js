@@ -137,19 +137,20 @@ function loop() {
   for (let i = grid; i < canvas.height - grid; i += grid * 2) {
     context.fillRect(canvas.width / 2 - grid / 2, i, grid, grid);
   }
-  // add point to red score if ball gets past blue paddle
-  if(ball.x <= 0 && ball.x >= -1){
-    redScore += 1;
-  }
   
-  document.getElementById('red_score').innerHTML = redScore;
+//   // add point to red score if ball gets past blue paddle
+//   if(ball.x <= 0 && ball.x >= -1){
+//     redScore += 1;
+//   }
   
-  // add point to blue score if ball gets past red paddle
-  if(ball.x >= canvas.width && ball.x <= canvas.width + 1){
-    blueScore += 1;
-  }
+//   document.getElementById('red_score').innerHTML = redScore;
   
-  document.getElementById('blue_score').innerHTML = blueScore;
+//   // add point to blue score if ball gets past red paddle
+//   if(ball.x >= canvas.width && ball.x <= canvas.width + 1){
+//     blueScore += 1;
+//   }
+  
+//   document.getElementById('blue_score').innerHTML = blueScore;
 }
 
 // listen to keyboard events to move the paddles
