@@ -4,8 +4,8 @@ const grid = 15;
 const paddleHeight = grid * 5; // 80
 const maxPaddleY = canvas.height - grid - paddleHeight;
 
-var blueScore = 20;
-var redScore = 20;
+var blueScore = 0;
+var redScore = 0;
 
 var paddleSpeed = 6;
 var ballSpeed = 5;
@@ -79,8 +79,9 @@ function loop() {
   }
 
   // draw paddles
-  context.fillStyle = 'white';
+  context.fillStyle = 'blue';
   context.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
+  context.fillStyle = 'red';
   context.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
 
   // move ball by its velocity
@@ -126,6 +127,7 @@ function loop() {
   }
 
   // draw ball
+  context.fillStyle = 'white';
   context.fillRect(ball.x, ball.y, ball.width, ball.height);
 
   // draw walls
