@@ -1,0 +1,16 @@
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+  font-family: verdana;
+  font-size: 30px;
+  text-align: center;
+}
