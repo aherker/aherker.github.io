@@ -9,3 +9,8 @@
     align-items: center;
     justify-content: center;
   }
+  p {
+  font-family: verdana;
+  font-size: 30px;
+  text-align: center;
+}
